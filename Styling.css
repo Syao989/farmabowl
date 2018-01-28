@@ -2,9 +2,10 @@
   box-sizing: border-box;
 }
 
-p {
+header {
+  alighment: center;
+  width: 150px;
   background-color: green;
   font-size: 24px;
   font-family: Georgia;
-  text-color: red;
 }
