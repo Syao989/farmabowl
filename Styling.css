@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-header {
+.header {
   alighment: center;
   width: 150px;
   background-color: green;
