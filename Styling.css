@@ -3,7 +3,7 @@
 }
 
 .header {
-  alighment: center;
+  text-align: center;
   width: 150px;
   background-color: green;
   font-size: 24px;
