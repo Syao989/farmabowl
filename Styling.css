@@ -13,6 +13,51 @@ h1 {
   text-align: center;
 }
 
+ul {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: gray;
+}
+
+li {
+ float: left; 
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+li a,.drop-button {
+  display: inline-block;
+  color: black;
+  text-alight: center;
+  padding: 14px 14px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover, .drop-button {
+  background-color: Light-Gray;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: AliceBlue;
+    min-width: 60px;
+}
+
+.dropdown-content:hover {
+  background-color: #99cfff; 
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 .header {
   
 }
