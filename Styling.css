@@ -50,6 +50,14 @@ li a:hover, .dropdown:hover, .drop-button {
     min-width: 60px;
 }
 
+.dropdown-content a {
+    color: black;
+    padding: 12px 12px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
 .dropdown-content:hover {
   background-color: #99cfff; 
 }
