@@ -29,6 +29,7 @@ li {
 
 li.dropdown {
   display: inline-block;
+  position: relative;
 }
 
 li a,.drop-button {
@@ -39,8 +40,8 @@ li a,.drop-button {
   text-decoration: none;
 }
 
-li a:hover, .dropdown:hover, .drop-button {
-  background-color: Light-Gray;
+li .dropdown:hover, .drop-button {
+  background-color: red;
 }
 
 .dropdown-content {
