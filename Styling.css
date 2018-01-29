@@ -40,7 +40,7 @@ li a,.drop-button {
   text-decoration: none;
 }
 
-li .dropdown:hover, .drop-button {
+li a:hover, .dropdown:hover, .drop-button {
   background-color: red;
 }
 
@@ -59,7 +59,7 @@ li .dropdown:hover, .drop-button {
     text-align: center;
 }
 
-.dropdown-content:hover {
+.dropdown-content a:hover {
   background-color: #99cfff; 
 }
 
