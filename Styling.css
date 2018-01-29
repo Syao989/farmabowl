@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #154360;
+}
+
 h1 {
   color: green;
   font-size: 24px;
