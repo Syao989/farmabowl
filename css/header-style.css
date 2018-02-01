@@ -1,0 +1,277 @@
+.header {
+  width: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -ms-justify-content: space-between;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+  height: 75px;
+  position: absolute;
+  z-index: 100;
+}
+.header .logo h1 {
+  padding: 0 20px;
+  color: white;
+  line-height: 75px;
+  height: 75px;
+  font-size: 38px;
+  display: inline-block;
+  font-family: 'Norican', serif;
+  font-weight: 400;
+  position:absolute;
+  overflow: hidden;
+}
+.header .logo  img {
+  height: 30px;
+  margin: 20px 0 0 20px;
+}
+.header .menu ul {
+  margin: 0;
+  padding-right: 20px;
+  font-variant-caps: all-petite-caps;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+}
+.header .menu ul li {
+  display: inline-block;
+  list-style: none;
+  transition: all .25s;
+  -webkit-transition: all .25s;
+  -moz-transition: all .25s;
+  -o-transition: all .25s;
+  -ms-transition: all .25s;
+}
+.header .menu ul li a {
+  position: relative;
+}
+.header .menu ul li a:before {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 2px;
+  bottom: 20px;
+  left: 10%;
+  background-color: white;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.15s ease-in-out 0s;
+  transition: all 0.15s ease-in-out 0s;
+}
+.header .menu ul li a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+.header .menu ul li:hover a{
+  color: #fff;
+}
+.header .menu ul .social{
+  width: 40px; 
+  background: none;
+  transition: all .25s;
+  -webkit-transition: all .25s;
+  -moz-transition: all .25s;
+  -o-transition: all .25s;
+  -ms-transition: all .25s;  
+}
+.header .menu ul .social:hover{
+  background: #ad4d90;
+}
+.social img{
+  width: 18px;
+  position: relative;
+  top: 4px;
+  right: 5px; 
+  transition: all .25s;
+  -webkit-transition: all .25s;
+  -moz-transition: all .25s;
+  -o-transition: all .25s;
+  -ms-transition: all .25s;  
+}
+.social:hover img{
+  position: relative;
+  top: -2px;
+}
+.dot{
+  font-size: 12px;
+  color:white;
+}
+.header .menu ul li a {
+  color: #dedede;
+  text-decoration: none;
+  display: block;
+  padding: 0 15px;
+  line-height: 75px;  
+  font-size: 20px;
+}
+
+.header nav.menu .hamburger span p {
+  position: absolute;
+  top: -20px;
+}
+@media screen and (max-width: 767px), (hover:none) {
+  .dot{
+    display:none;
+  }
+  .header nav.menu ul {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    margin-left: -1000px;
+    z-index: 1;
+    background-color: #000000;
+    -ms-box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.3);
+    -o-box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.3);
+  }
+  .header nav.menu.active {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+  }
+  .header nav.menu.active ul {
+    margin-left: 0;
+    -ms-transition: margin-left 0.25s;
+    -moz-transition: margin-left 0.25s;
+    -o-transition: margin-left 0.25s;
+    -webkit-transition: margin-left 0.25s;
+    transition: margin-left 0.25s;
+    width: 75vw;
+  }
+  .header nav.menu.active ul li {
+    display: block;
+    
+  }
+  .header nav.menu.active ul li a {
+    width: 100%;
+    font-size: 24px;
+  }
+  .header .menu ul li:hover {
+    color: #fff;
+  }
+  .header .menu ul li a:before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  bottom: 20px;
+  left: 15px;
+  background-color: white;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.15s ease-in-out 0s;
+  transition: all 0.15s ease-in-out 0s;
+}
+.header .menu ul li a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+  .header nav.menu.active ul li .flexbox-container {
+    display: -webkit-flex;
+    display: flex;
+    -ms-justify-content: space-between;
+    -o-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+  }
+  .header nav.menu.active ul li .flexbox-container a {
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+  }
+
+  .header nav.menu .hamburger {
+    display: inline-block;
+    position: absolute;
+    margin: 15px;
+    right: 0px;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 2;
+  }
+  .header nav.menu .hamburger span,
+  .header nav.menu .hamburger span:before,
+  .header nav.menu .hamburger span:after {
+    left: 12px; /* to make hamburger untilted, make this 12 px and make the two below into 0*/
+      top: 20px;
+    border-radius: 2px;
+    height: 4px;
+    width: 27px;
+    background: #fff;
+    position: absolute;
+    display: block;
+    content: '';
+  }
+  .header nav.menu .hamburger span:before {
+    left: 0px;
+    top: -9px;
+  }
+  .header nav.menu .hamburger span:after {
+    left: 0px;
+    top: 9px;
+  }
+  .header nav.menu .hamburger.active span {
+    background-color: transparent;
+  }
+  .header nav.menu .hamburger span p {
+    position: relative;
+    top: 0px;
+    margin-top: 18px;
+    margin-left: 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    opacity: .9;
+    font-size: 12px;
+  }
+  .header nav.menu .hamburger.active span p {
+    opacity: 0;
+  }
+  .header nav.menu .hamburger.active span:before, .header nav.menu .hamburger.active.active span:after {
+    top: 0;
+  }
+  .header nav.menu .hamburger.active span:before {
+    -o-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  .header nav.menu .hamburger.active span:after {
+    -o-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}
+
+
+.dimmer {
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none;
+}
+.dimmer.active {
+  display: block;
+}
+
+.no-scrolling {
+  overflow: hidden;
+  position: fixed;
+}

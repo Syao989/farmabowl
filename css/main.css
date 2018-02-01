@@ -1,0 +1,424 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline
+}
+body {
+	background-color: #c5ea9c;
+}
+* {
+	box-sizing: border-box;
+}
+/*
+.header-helper {
+  width: 100%;
+  height: 255px;
+  position: absolute;
+  top: 0px;
+  z-index = -100;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45), rgba(255,0,0,0));
+}*/
+
+/*header and banner*/
+
+/*--------------------------------------------------*/
+
+.header-line {
+	width: 100%;
+	height: 1px;
+	background-color: white;
+	opacity: .45;
+	top: 75px;
+	position: absolute;
+	z-index: 1;
+}
+.banner {
+	width: 100%;
+	height: 550px;
+  position: relative;
+  z-index: 4;
+}
+.banner .banner-darken {
+	width: inherit;
+	height: inherit;
+	position: absolute;
+	top: 0px;
+	background-color: #2c0438;
+	opacity: .55;
+}
+.banner img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.banner-caption {
+	position: relative;
+	bottom: 50%;
+  margin: 0 auto;
+  text-align: center;
+	color: white;
+	width: 75%;
+	min-width: 280px;
+	max-width: 800px;
+}
+.banner-caption h1 {
+	font-size: 65px;
+	max-width: 1200px;
+	display: inline-block;
+	font-family: 'Ramaraja', serif;
+	line-height: 60px;
+}
+.banner-caption p {
+  margin: 15px;
+	font-size: 30px;
+  font-style: italic;
+	font-family: 'Crimson Text', serif;
+}
+@media screen and (max-width: 767px) {
+	.banner {
+		height: 550px;
+	}
+	.banner-caption {
+		bottom: 55%;
+	}
+	.banner-caption p {
+		font-size: 30px;
+	}
+}
+@media screen and (max-width: 600px) {
+	.banner {
+		height: 500px;
+	}
+	.banner-caption {
+		bottom: 55%;
+		
+	}
+	.banner-caption h1 {
+		font-size: 45px;
+	}
+	.banner-caption p {
+		font-size: 24px;
+	}
+}
+@media screen and (max-width: 350px) {
+	.banner-caption h1 {
+		font-size: 45px;
+		line-height: 44px;
+	}
+	.banner-caption p {
+		font-size: 24px;
+	}
+}
+@media screen and (max-height: 450px) and (hover:none) {
+	.banner {
+		height: 350px;
+	}
+	.banner-caption h1 {
+		font-size: 45px;
+		line-height: 44px;
+	}
+	.banner-caption p {
+		font-size: 30px;
+	}
+}
+.banner-caption a {
+	background-color: #83bc41;
+	border-radius: 0px;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.9);
+	color: white;
+  font-size: 25px;
+	display: block;
+	font-family: 'Josefin Sans', serif;
+  font-variant-caps: all-small-caps;
+	font-weight: bold;
+	height: 50px;
+	line-height: 50px;
+  margin: 7px auto;
+	text-align: center;
+	text-decoration: none;
+	width: 150px;
+	box-shadow: inset 0 0 0 0 #fff;
+	transition: all .2s;
+	-webkit-transition: all .2s;
+	-moz-transition: all .2s;
+	-o-transition: all .2s;
+	-ms-transition: all .2s;
+}
+.banner-caption a:hover {
+  width: 165px;
+	box-shadow: inset 0 -50px 0 0 #fff;
+	color: #05240b;
+}
+
+.footer {
+	display: flex;
+	width: 100%;
+  position: relative;
+  background-color: #224b09;
+  position: relative;
+  z-index: 4;
+}
+.footer:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: .5;
+  opacity: .25;
+  background: url(../images/clouds.jpg);
+  background-size: cover;
+}
+.footer>li {
+  position: relative;
+  z-index: 100;
+	color: #c3bbc0;
+	padding: 25px;
+	list-style: none;
+	font-size: 18px;
+	font-family: 'Crimson Text', serif;
+}
+.footer h2 {
+	color: white;
+	font-size: 22px;
+	margin-bottom: 16px;
+}
+.footer p {
+	margin: 6px 0 12px 0;
+	line-height: 22px;
+	font-size: 16px;
+	font-family: 'Crimson Text', serif;
+}
+/*first flex-item*/
+
+.footer>li:nth-child(1) {
+	flex: 1 1 0;
+}
+/*second flex-item*/
+
+.footer>li:nth-child(2) {
+	flex: 2 1 0;
+	display: flex;
+  padding-right: 0;
+}
+.footer>li .linklist {
+	flex: 1 1 0;
+	margin-right: 12px;
+}
+.linklist li {
+	list-style: none;
+	margin: 12px 0;
+	line-height: 16px;
+	font-size: 12px;
+	font-family: 'Montserrat', sans-serif;
+}
+.footer li .linklist a {
+	color: #c3bbc0;
+	text-decoration: none;
+}
+.footer li .linklist a:hover {
+	color: white;
+}
+@media screen and (max-width: 640px) {
+	.footer {
+		display: block;
+	}
+	.footer>li {
+		padding-bottom: 2px;
+	}
+	.linklist li {
+		margin: 24px 0;
+		font-size: 14px;
+		line-height: 20px;
+	}
+	.footer>li .linklist {
+		margin: 0;
+	}
+}
+.copyright {
+	background-color: #2f5f00;
+	color: #c3bbc0;
+	padding: 25px;
+	font-style: italic;
+	text-align: center;
+  position: relative;
+  z-index: 4;
+}
+.email {
+  text-decoration: underline;
+  text-decoration-color: #a896a1;
+}
+.card {
+  width: 100%;
+  height: 380px;
+  margin: 40px 0;
+  position: relative;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: -20;
+}
+.card:before{
+  content: "";
+  background-color:#151700;
+  top: 0;
+  left: 0;
+  opacity: .5;
+  width: 100%;
+  height: 100%;
+  z-index: -15;
+  position: absolute;
+}
+.card .title, .card .caption {
+  position: relative;
+  z-index: -10;
+  color: white;
+}
+.cardmonte {
+  width: 75%;
+  max-width: 500px;
+  margin: auto;
+  top: 19%;
+  position: relative;
+  padding: 20px;
+  display: block;
+}
+.card .title{
+  font-size: 80px;
+  display: block;
+  float: left;
+  padding: 20px;
+  font-family: 'Ramaraja', sans-serif;
+}
+.card .caption {
+  font-size: 25px;
+  display: block;
+  padding-top: 25px;
+  line-height: 35px;
+  font-family: 'Ramaraja', sans-serif;
+}
+.line {
+  left: -80px;
+  top: 95px;
+  height: 2px;
+  width: 20%;
+  background-color: white;
+  position: absolute;
+}
+.yogurt-power {
+  z-index: 1;
+  font-size: 30px;
+  font-family: 'Norican', sans-serif;
+  top: 280px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+}
+.yogurt-power a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  left: 0;
+    -webkit-transition: all 0.15s ease-in-out 0s;
+  transition: all 0.15s ease-in-out 0s;
+}
+.yogurt-power a:hover {
+  left: 8px;
+}
+.yogurt-power a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  background-color: white;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.15s ease-in-out 0s;
+  transition: all 0.15s ease-in-out 0s;
+}
+.yogurt-power a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+@media screen and (max-width: 640px) {
+  .line {
+    display: none;
+  }
+}
+@media screen and (max-width: 640px) and (min-width: 540px) {
+  .card .caption {
+    font-size: 22px;
+    padding-top: 12px;
+  }
+  .card .title {
+    font-size:40px;
+  }
+  .cardmonte {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .card .caption {
+    font-size: 18px;
+    line-height: 20px;
+    padding-top: 12px;
+  }
+  .card .title {
+    font-size:40px;
+  }
+  .cardmonte {
+    width: 90%;
+  }
+  .yogurt-power {
+    font-size: 20px;
+  }
+}
+/*Norican|Lackerli+One|Niconne|Marck+Script*/
+.scroll-down {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Norican', sans-serif;
+  color: rgba(0, 0, 0, 0.9);
+  animation-name: updown;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: updown; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+}
+@keyframes updown {
+  0% {padding-top: 45px;}
+  50% {padding-top: 35px;}
+  100% {padding-top: 45px;}
+}
+@-webkit-keyframes updown {
+  0% {padding-top: 45px;}
+  50% {padding-top: 35px;}
+  100% {padding-top: 45px;}
+}
+
+hr {
+  border: none;
+  border-left: 15px dotted white;
+  width: 0;
+  height: 1000px;
+  z-index: 1;
+  position: fixed;
+  top: 0px;
+  left: 5%;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!--ensures correct mobile responsive resizing-->
+	<meta charset="UTF-8">
+	<title>Georgia Junior Classical League</title>
+	<link href="https://fonts.googleapis.com/css?family=Ramaraja|Crimson+Text|IM+Fell+Double+Pica+SC" rel="stylesheet"> <!--custom fonts-->
+	<link href="css/main.css" rel="stylesheet"> <!--main stylesheet-->
+	<link href="css/header-style.css" rel="stylesheet"> <!--stylesheet for header-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /> <!--fontawesome icons-->
+</head>
+
+<body>
+    <div id="header-holder"></div> <!--"load" function will load reuse-header.html code into this div-->
+	<div class="header-helper"></div> <!--subtle gradient under header, when transparent-->
+	<div class="header-line"></div> <!--thin line under under header, when transparent-->
+	<h2 style="padding-top:80px; font-size: 28px;">Our Mission</h2>
+    <p>We are an organization dedicated to certain things, which I will most likely discuss sometime later. </p>
+    
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script> <!--important! jQuery script CDN-->
+    <script>
+        $(function(){
+            $('#header-holder').load('reuse/reuse-header.html');
+        });
+    </script>
+</body>
+
+
+</html>
