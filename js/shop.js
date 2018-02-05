@@ -94,7 +94,7 @@ if (typeof(Storage) !== "undefined") {
   function tog1() {
     if (localStorage.cart1 > 0) {
       localStorage.cart1 = 0;
-      document.getElementById("add1").innerHTML = "<i class='fas fa-heart'></i> Add to cart"; document.getElementById("add1").style.backgroundColor=" #78ad00";
+      document.getElementById("add1").innerHTML = "<i class='fa fa-heart'></i> Add to cart"; document.getElementById("add1").style.backgroundColor=" #78ad00";
     } else {
       localStorage.cart1 = 1;
       document.getElementById("add1").innerHTML = "Remove Item";document.getElementById("add1").style.backgroundColor="#7c6f71";
@@ -107,7 +107,7 @@ if (typeof(Storage) !== "undefined") {
   function tog2() {
     if (localStorage.cart2> 0) {
       localStorage.cart2 = 0;
-      document.getElementById("add2").innerHTML = "<i class='fas fa-heart'></i> Add to cart"; document.getElementById("add2").style.backgroundColor=" #78ad00";
+      document.getElementById("add2").innerHTML = "<i class='fa fa-heart'></i> Add to cart"; document.getElementById("add2").style.backgroundColor=" #78ad00";
     } else {
       localStorage.cart2 = 1;
       document.getElementById("add2").innerHTML = "Remove Item";document.getElementById("add2").style.backgroundColor="#7c6f71";
@@ -120,7 +120,7 @@ if (typeof(Storage) !== "undefined") {
   function tog3() {
     if (localStorage.cart3 > 0) {
       localStorage.cart3 = 0;
-      document.getElementById("add3").innerHTML = "<i class='fas fa-heart'></i> Add to cart"; document.getElementById("add3").style.backgroundColor=" #78ad00";
+      document.getElementById("add3").innerHTML = "<i class='fa fa-heart'></i> Add to cart"; document.getElementById("add3").style.backgroundColor=" #78ad00";
     } else {
       localStorage.cart3 = 1;
       document.getElementById("add3").innerHTML = "Remove Item";document.getElementById("add3").style.backgroundColor="#7c6f71";
@@ -133,7 +133,7 @@ if (typeof(Storage) !== "undefined") {
   function tog4() {
     if (localStorage.cart4 > 0) {
       localStorage.cart4 = 0;
-      document.getElementById("add4").innerHTML = "<i class='fas fa-heart'></i> Add to cart"; document.getElementById("add4").style.backgroundColor=" #78ad00";
+      document.getElementById("add4").innerHTML = "<i class='fa fa-heart'></i> Add to cart"; document.getElementById("add4").style.backgroundColor=" #78ad00";
     } else {
       localStorage.cart4 = 1;
       document.getElementById("add4").innerHTML = "Remove Item";document.getElementById("add4").style.backgroundColor="#7c6f71";
@@ -146,7 +146,7 @@ if (typeof(Storage) !== "undefined") {
   function tog5() {
     if (localStorage.cart5 > 0) {
       localStorage.cart5 = 0;
-      document.getElementById("add5").innerHTML = "<i class='fas fa-heart'></i> Add to cart"; document.getElementById("add5").style.backgroundColor=" #78ad00";
+      document.getElementById("add5").innerHTML = "<i class='fa fa-heart'></i> Add to cart"; document.getElementById("add5").style.backgroundColor=" #78ad00";
     } else {
       localStorage.cart5 = 1;
       document.getElementById("add5").innerHTML = "Remove Item";document.getElementById("add5").style.backgroundColor="#7c6f71";
@@ -159,7 +159,7 @@ if (typeof(Storage) !== "undefined") {
   function tog6() {
     if (localStorage.cart6 > 0) {
       localStorage.cart6 = 0;
-      document.getElementById("add6").innerHTML = "<i class='fas fa-heart'></i> Add to cart"; document.getElementById("add6").style.backgroundColor=" #78ad00";
+      document.getElementById("add6").innerHTML = "<i class='fa fa-heart'></i> Add to cart"; document.getElementById("add6").style.backgroundColor=" #78ad00";
     } else {
       localStorage.cart6 = 1;
       document.getElementById("add6").innerHTML = "Remove Item";document.getElementById("add6").style.backgroundColor="#7c6f71";

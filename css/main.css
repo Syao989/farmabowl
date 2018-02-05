@@ -136,6 +136,9 @@ body {
 	.banner {
 		height: 350px;
 	}
+  .banner-caption {
+    width: 85%;
+  }
 	.banner-caption h1 {
 		font-size: 45px;
 		line-height: 44px;
@@ -155,6 +158,9 @@ body {
 	.banner {
 		height: 320px;
 	}
+  .banner-caption {
+    width: 85%;
+  }
 	.banner-caption h1 {
 		font-size: 45px;
 		line-height: 44px;
