@@ -15,7 +15,7 @@ function moveBackground() {
     '-moz-transform': translate,
     'transform': translate
   });
-    $('h1').css({
+  $('.moving').css({
     '-webit-transform': translate,
     '-moz-transform': translate,
     'transform': translate
