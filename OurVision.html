@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta content="width=device-width, initial-scale=1" name="viewport"><!--ensures correct mobile responsive resizing-->
+	<meta charset="UTF-8">
+	<title>Farm-a-Bowl: Our Vision</title>
+	<link href="https://fonts.googleapis.com/css?family=Norican|Leckerli+One|Niconne|Marck+Script|Josefin+Sans|Ramaraja" rel="stylesheet"><!--custom fonts-->
+	<link href="css/OurVision.css" rel="stylesheet"><!--main stylesheet-->
+	<link href="css/header-style.css" rel="stylesheet"><!--stylesheet for header-->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"><!--fontawesome icons-->  
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="header-holder"></div><!--"load" function will load reuse-header.html code into this div-->
+    
+    <div class="banner-small">
+		<img src="images/bowl1.jpg">
+		<div class="banner-darken"></div>
+		<div class="banner-caption">
+			<h1>Our Vision...</h1>
+		</div>
+	</div>
+    
+    <div class="category-holder">
+        <div class="category-element">
+            <figure class = "tint t1">
+                <img src="images/Sustain-a-bowl.jpeg">
+                <button id="button1" onclick="toggle1()">Sustain-a-bowl</button>
+            </figure>
+        </div>
+        <div class="category-element">
+            <figure class = "tint t2">
+                <img src="images/Access-i-bowl.jpg">
+                <button id="button2" onclick="toggle2()">Access-i-bowl</button>
+            </figure>
+        </div>
+        <div class="category-element">
+            <figure class = "tint t3">
+                <img src="images/bowl1.jpg">
+                <button id="button3" onclick="toggle3()">Afford-a-bowl</button>
+            </figure>
+        </div>
+        <div class="category-element">
+            <figure class = "tint t4">
+                <img src="images/bowl1.jpg">
+                <button id="button4" onclick="toggle4()">Something</button>
+            </figure>
+        </div>
+    </div>
+    
+    <nav class="text-holder">
+        <nav class="text-element" id="text1">
+            <h1>Sustainability</h1>
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non libero elit. Duis maximus mauris augue, ac rhoncus arcu eleifend vitae. Proin luctus rhoncus nulla ac sodales. Proin feugiat dapibus neque quis varius. Sed suscipit, leo eu cursus sagittis, sem tellus euismod mi, vitae mollis elit augue vitae lectus. Maecenas vulputate dapibus ante vel dapibus. Vestibulum varius, velit vitae euismod maximus, mauris erat congue nisl, et pharetra tortor neque eu odio. Sample Text 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non libero elit. Duis maximus mauris augue, ac rhoncus arcu eleifend vitae. Proin luctus rhoncus nulla ac sodales. Proin feugiat dapibus neque quis varius. Sed suscipit, leo eu cursus sagittis, sem tellus euismod mi, vitae mollis elit augue vitae lectus. Maecenas vulputate dapibus ante vel dapibus. Vestibulum varius, velit vitae euismod maximus, mauris erat congue nisl, et pharetra tortor neque eu odio.Sample Text 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non libero elit. Duis maximus mauris augue, ac rhoncus arcu eleifend vitae. Proin luctus rhoncus nulla ac sodales. Proin feugiat dapibus neque quis varius. Sed suscipit, leo eu cursus sagittis, sem tellus euismod mi, vitae mollis elit augue vitae lectus. Maecenas vulputate dapibus ante vel dapibus. Vestibulum varius, velit vitae euismod maximus, mauris erat congue nisl, et pharetra tortor neque eu odio.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non libero elit. Duis maximus mauris augue, ac rhoncus arcu eleifend vitae. Proin luctus rhoncus nulla ac sodales. Proin feugiat dapibus neque quis varius. Sed suscipit, leo eu cursus sagittis, sem tellus euismod mi, vitae mollis elit augue vitae lectus. Maecenas vulputate dapibus ante vel dapibus. Vestibulum varius, velit vitae euismod maximus, mauris erat congue nisl, et pharetra tortor neque eu odio.Sample Text 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non libero elit. Duis maximus mauris augue, ac rhoncus arcu eleifend vitae. Proin luctus rhoncus nulla ac sodales. Proin feugiat dapibus neque quis varius. Sed suscipit, leo eu cursus sagittis, sem tellus euismod mi, vitae mollis elit augue vitae lectus. Maecenas vulputate dapibus ante vel dapibus. Vestibulum varius, velit vitae euismod maximus, mauris erat congue nisl, et pharetra tortor neque eu odio.</p>
+        </nav>
+        <nav class="text-element" id="text2">
+            <h1>Accessibility</h1>
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non libero elit. Duis maximus mauris augue, ac rhoncus arcu eleifend vitae. Proin luctus rhoncus nulla ac sodales. Proin feugiat dapibus neque quis varius. Sed suscipit, leo eu cursus sagittis, sem tellus euismod mi, vitae mollis elit augue vitae lectus. Maecenas vulputate dapibus ante vel dapibus. Vestibulum varius, velit vitae euismod maximus, mauris erat congue nisl, et pharetra tortor neque eu odio.Sample Text 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non libero elit. Duis maximus mauris augue, ac rhoncus arcu eleifend vitae. Proin luctus rhoncus nulla ac sodales. Proin feugiat dapibus neque quis varius. Sed suscipit, leo eu cursus sagittis, sem tellus euismod mi, vitae mollis elit augue vitae lectus. Maecenas vulputate dapibus ante vel dapibus. Vestibulum varius, velit vitae euismod maximus, mauris erat congue nisl, et pharetra tortor neque eu odio.</p>
+        </nav>
+        <nav class="text-element" id="text3">
+            <h1>Affordability</h1>
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non libero elit. Duis maximus mauris augue, ac rhoncus arcu eleifend vitae. Proin luctus rhoncus nulla ac sodales. Proin feugiat dapibus neque quis varius. Sed suscipit, leo eu cursus sagittis, sem tellus euismod mi, vitae mollis elit augue vitae lectus. Maecenas vulputate dapibus ante vel dapibus. Vestibulum varius, velit vitae euismod maximus, mauris erat congue nisl, et pharetra tortor neque eu odio.Sample Text 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non libero elit. Duis maximus mauris augue, ac rhoncus arcu eleifend vitae. Proin luctus rhoncus nulla ac sodales. Proin feugiat dapibus neque quis varius. Sed suscipit, leo eu cursus sagittis, sem tellus euismod mi, vitae mollis elit augue vitae lectus. Maecenas vulputate dapibus ante vel dapibus. Vestibulum varius, velit vitae euismod maximus, mauris erat congue nisl, et pharetra tortor neque eu odio.</p>
+        </nav>
+        <nav class="text-element" id="text4">
+            <h1>Something</h1>
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non libero elit. Duis maximus mauris augue, ac rhoncus arcu eleifend vitae. Proin luctus rhoncus nulla ac sodales. Proin feugiat dapibus neque quis varius. Sed suscipit, leo eu cursus sagittis, sem tellus euismod mi, vitae mollis elit augue vitae lectus. Maecenas vulputate dapibus ante vel dapibus. Vestibulum varius, velit vitae euismod maximus, mauris erat congue nisl, et pharetra tortor neque eu odio.Sample Text 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non libero elit. Duis maximus mauris augue, ac rhoncus arcu eleifend vitae. Proin luctus rhoncus nulla ac sodales. Proin feugiat dapibus neque quis varius. Sed suscipit, leo eu cursus sagittis, sem tellus euismod mi, vitae mollis elit augue vitae lectus. Maecenas vulputate dapibus ante vel dapibus. Vestibulum varius, velit vitae euismod maximus, mauris erat congue nisl, et pharetra tortor neque eu odio.</p>
+        </nav>
+    </nav>
+    
+    <div class="vertical-space"></div>
+    
+    <div id="footer-holder"></div><!--"load" function will load reuse-footer.html code into this div-->
+
+
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script> <!--important! jQuery script CDN-->
+     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+  
+    <script>
+        AOS.init();
+    </script>
+    <script>
+       $(function(){
+           $('#header-holder').load('reuse/reuse-header.html');
+           $('#footer-holder').load('reuse/reuse-footer.html');
+       });
+    </script>
+
+    <script>
+        function toggle1() {
+            document.getElementById("text1").style.opacity = "1";  
+            document.getElementById("text2").style.opacity = "0";
+            document.getElementById("text3").style.opacity = "0";
+            document.getElementById("text4").style.opacity = "0";
+        }
+    </script>
+    <script>
+        function toggle2() {
+            document.getElementById("text1").style.opacity = "0";  
+            document.getElementById("text2").style.opacity = "1";
+            document.getElementById("text3").style.opacity = "0";
+            document.getElementById("text4").style.opacity = "0";
+        }
+    </script>
+    <script>
+        function toggle3() {
+            document.getElementById("text1").style.opacity = "0";  
+            document.getElementById("text2").style.opacity = "0";
+            document.getElementById("text3").style.opacity = "1";
+            document.getElementById("text4").style.opacity = "0";
+        }
+    </script>
+    <script>
+        function toggle4() {
+            document.getElementById("text1").style.opacity = "0";  
+            document.getElementById("text2").style.opacity = "0";
+            document.getElementById("text3").style.opacity = "0";
+            document.getElementById("text4").style.opacity = "1";
+        }
+    </script>
+</body>
