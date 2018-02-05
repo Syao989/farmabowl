@@ -100,7 +100,7 @@ body {
 }
 
 .tint.t2:hover:before {
-    background: rgba(0, 102, 204, 0.65);
+    background: rgba(0, 102, 204, 0.5);
 }
 
 .tint.t3:before {
@@ -108,7 +108,7 @@ body {
 }
 
 .tint.t3:hover:before {
-    background: rgba(204, 204, 0, 0.5);
+    background: rgba(204, 204, 0, 0.65);
 }
 
 .tint.t4:before {
