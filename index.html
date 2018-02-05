@@ -7,62 +7,79 @@
 	<link href="https://fonts.googleapis.com/css?family=Norican|Leckerli+One|Niconne|Marck+Script|Josefin+Sans|Ramaraja" rel="stylesheet"><!--custom fonts-->
 	<link href="css/main.css" rel="stylesheet"><!--main stylesheet-->
 	<link href="css/header-style.css" rel="stylesheet"><!--stylesheet for header-->
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"><!--fontawesome icons-->
-  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
+	<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-	<div id="header-holder"></div><!--"load" function will load reuse-header.html code into this div-->
-		
+	<div id="header-holder" ></div><!--"load" function will load reuse-header.html code into this div-->
 	<div class="banner">
-		<img src="images/bowl1.jpg">
+		<img src="images/bowl1.jpg" data-aos="fade" data-aos-duration="1500">
 		<div class="banner-darken"></div>
 		<div class="banner-caption">
-			<h1>From our farms to your bowl. </h1>
-			<p>Farm-fresh delivery in 30 minutes.</p><a class="action-button" href="">Order Now</a>
+			<h1 data-aos="fade-up" data-aos-duration="500">From our farms to your bowl.</h1>
+			<p data-aos="fade-up" data-aos-duration="800">Hungry? Farm-fresh delivery in 30 minutes.</p><a class="action-button" href="shop.html">Order Now</a>
 		</div>
 	</div>
-  <div class="scroll-down"><p>--- Scroll to See the Process ---</p></div>
-  <hr>
-<div class="card"  data-aos="fade-up" data-aos-duration="500">
-    <img src="images/bowl2.jpg">
-    <div class="cardmonte">
-    <p><span class="line" data-aos="fade-right" data-aos-duration="900"></span><span class="title" data-aos="fade-left" data-aos-duration="700">1. | </span> <span class="caption" data-aos="fade" data-aos-duration="700">Order one of our organic salad bowls from our online menu. Is your diet vegan or gluten-free? We have a selection just for you! </span></p></div>
-  
-    <div class="yogurt-power"><a href="" >Explore our Menu ></a></div >
-	</div><!--closes "card" div-->
-  
-  <div class="card"  data-aos="fade-up" data-aos-duration="500">
-    <img src="images/farmer.jpg">
-    <div class="cardmonte">
-    <p><span class="line" data-aos="fade-right" data-aos-duration="900"></span><span class="title" data-aos="fade-left" data-aos-duration="700">2. | </span> <span class="caption" data-aos="fade" data-aos-duration="700">We then pack your order with hand-picked ingredients from local family farms all around Oregon.</span></p></div>
-    
-    <div class="yogurt-power"><a href="" >Befriend our Farmers ></a></div >
-	</div><!--closes "card" div-->
-  
-    <div class="card"  data-aos="fade-up" data-aos-duration="500">
-    <img src="images/arrival.jpg">
-    <div class="cardmonte">
-    <p><span class="line" data-aos="fade-right" data-aos-duration="900"></span><span class="title" data-aos="fade-left" data-aos-duration="700">3. | </span> <span class="caption" data-aos="fade" data-aos-duration="700"> And thanks to drone technology, your order arrives within half an hour, still fresh and popping. Enjoy!</span></p></div>
-      <div class="yogurt-power"><a href="" >Order Now ></a></div >
-	</div><!--closes "card" div-->
-
-    
-  <div id="footer-holder"></div><!--"load" function will load reuse-footer.html code into this div-->
-
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script> <!--important! jQuery script CDN-->
-  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-  
-  <script>
-AOS.init();
-</script>
+	<div class="scroll-down">
+		<p><i class="fa fa-angle-down"></i> Scroll to See the Process <i class="fa fa-angle-down"></i></p>
+	</div>
+	<div class="trail-container">
+		<img src="images/trail.png">
+		<div class="trail-slight"></div>
+		<div class="trail-dark"></div>
+		<p class="map1" data-aos="flip-down" data-aos-duration="400" data-aos-easing="ease-in-sin"><i class="fa fa-map-marker" data-aos-anchor-placement="bottom-bottom"></i></p>
+		<p class="map2" data-aos="flip-down" data-aos-duration="400" data-aos-easing="ease-in-sin"><i class="fa fa-map-marker" data-aos-anchor-placement="bottom-bottom"></i></p>
+		<p class="map3" data-aos="flip-down" data-aos-duration="400" data-aos-easing="ease-in-sin"><i class="fa fa-map-marker" data-aos-anchor-placement="bottom-bottom"></i></p>
+		<p class="map4" data-aos="flip-down" data-aos-duration="400" data-aos-easing="ease-in-sin"><i class="fa fa-map-marker" data-aos-anchor-placement="bottom-bottom"></i></p>
+		<p class="map5" data-aos="flip-down" data-aos-duration="400" data-aos-easing="ease-in-sin"><i class="fa fa-home" data-aos-anchor-placement="bottom-bottom"></i></p>
+	</div>
+	<div class="trail-post">
+		<p></p>
+	</div>
+	<div class="supercard" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="500"></div>
+	<div class="card" data-aos="fade-up" data-aos-duration="500">
+		<img src="images/bowl2.jpg">
+		<div class="cardmonte">
+			<p><span class="line" data-aos="fade-right" data-aos-duration="900"></span><span class="title" data-aos="fade-left" data-aos-duration="700">1. |</span> <span class="caption" data-aos="fade" data-aos-duration="700">Order one of our organic salad bowls from our online menu. Is your diet vegan or gluten-free? We have a selection just for you!</span></p>
+		</div>
+		<div class="yogurt-power">
+			<a href="shop.html">Explore our Menu &gt;</a>
+		</div>
+	</div>
+	<div class="card" data-aos="fade-up" data-aos-duration="500">
+		<img src="images/farmer.jpg">
+		<div class="cardmonte">
+			<p><span class="line" data-aos="fade-right" data-aos-duration="900"></span><span class="title" data-aos="fade-left" data-aos-duration="700">2. |</span> <span class="caption" data-aos="fade" data-aos-duration="700">We then pack your order with hand-picked ingredients from local family farms all around Oregon.</span></p>
+		</div>
+		<div class="yogurt-power">
+			<a href="">Befriend our Farmers &gt;</a>
+		</div>
+	</div>
+	<div class="card" data-aos="fade-up" data-aos-duration="500">
+		<img src="images/arrival.jpg">
+		<div class="cardmonte">
+			<p><span class="line" data-aos="fade-right" data-aos-duration="900"></span><span class="title" data-aos="fade-left" data-aos-duration="700">3. |</span> <span class="caption" data-aos="fade" data-aos-duration="700">And thanks to drone technology, your order arrives within half an hour, still fresh and popping. Enjoy!</span></p>
+		</div>
+		<div class="yogurt-power">
+			<a href="shop.html">Order Now &gt;</a>
+		</div>
+	</div>
+	<div id="footer-holder"></div><!--"load" function will load reuse-footer.html code into this div-->
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'>
+	</script> <!--important! jQuery script CDN-->
+	 
+	<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js">
+	</script> 
 	<script>
-
-	       $(function(){
-	           $('#header-holder').load('reuse/reuse-header.html');
-             $('#footer-holder').load('reuse/reuse-footer.html');
-	       });
+	AOS.init();
+	</script> 
+	<script>
+	          $(function(){
+	              $('#header-holder').load('reuse/reuse-header.html');
+	            $('#footer-holder').load('reuse/reuse-footer.html');
+	          });
 	</script>
 </body>
 </html>

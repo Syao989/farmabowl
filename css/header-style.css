@@ -113,6 +113,11 @@
   position: absolute;
   top: -20px;
 }
+@media screen and (max-width: 400px) {
+  .header .logo h1 {
+    font-size: 24px;
+  }
+}
 @media screen and (max-width: 767px), (hover:none) {
   .dot{
     display:none;
@@ -123,8 +128,8 @@
     left: 0;
     top: 0;
     margin-left: -1000px;
-    z-index: 1;
-    background-color: #000000;
+    z-index: 1000;
+    background-color: #1a3800;
     -ms-box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.3);
     -o-box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.3);
@@ -145,6 +150,7 @@
     -o-transition: margin-left 0.25s;
     -webkit-transition: margin-left 0.25s;
     transition: margin-left 0.25s;
+
     width: 75vw;
   }
   .header nav.menu.active ul li {

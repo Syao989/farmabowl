@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta content="width=device-width, initial-scale=1" name="viewport"><!--ensures correct mobile responsive resizing-->
+	<meta charset="UTF-8">
+	<title>Farm-a-Bowl</title>
+	<link href="https://fonts.googleapis.com/css?family=Norican|Leckerli+One|Niconne|Marck+Script|Josefin+Sans|Ramaraja" rel="stylesheet"><!--custom fonts-->
+	<link href="css/main.css" rel="stylesheet"><!--main stylesheet-->
+	<link href="css/header-style.css" rel="stylesheet"><!--stylesheet for header-->
+  	<link href="css/shop-style.css" rel="stylesheet"><!--stylesheet for header-->
+
+	<script type="text/javascript"> (function() { var css = document.createElement('link'); css.href = 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })(); </script>
+<!--fontawesome icons-->
+	<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="header-holder"></div><!--"load" function will load reuse-header.html code into this div-->
+	<div class="mbanner">
+		<img src="images/bowl1.jpg">
+		<div class="mbanner-darken"></div>
+		<div class="mbanner-caption">
+			<h1><a href="">Menu</a></h1>
+		</div>
+	</div>
+<div class="bigbox">
+<div class="cart">
+  <h1><i class="fa fa-shopping-cart"></i> My Cart</h1>
+  <div id="aw"><p>Lunch with family or dinner party for one? Order from our delicious and accessible menu. Delivered in 30 minutes, tops.</p></div>
+  <div class="show1 cart-row"><p>Item 1   (Servings: <span id="recount1"></span>)</p> <button onclick="tog1()" class="add-to-x">X</button></div>
+  <div class="show2 cart-row"><p>Item 2   (Servings: <span id="recount2"></span>)</p> <button onclick="tog2()" class="add-to-x">X</button></div>
+  <div class="show3 cart-row"><p>Item 3   (Servings: <span id="recount3"></span>)</p> <button onclick="tog3()" class="add-to-x">X</button></div>
+  <div class="show4 cart-row"><p>Item 4   (Servings: <span id="recount4"></span>)</p> <button onclick="tog4()" class="add-to-x">X</button></div>
+  <div class="show5 cart-row"><p>Item 5   (Servings: <span id="recount5"></span>)</p> <button onclick="tog5()" class="add-to-x">X</button></div>
+  <div class="show6 cart-row"><p>Item 6   (Servings: <span id="recount6"></span>)</p> <button onclick="tog6()" class="add-to-x">X</button></div>
+  <a href="cart.html" class="checkout"><button id="aw2">Checkout ></button></a>
+  
+  
+</div>
+<div class="not-cart preload" id="no">
+<!------------------------------------------------------>
+<div class="item-container show1" id="no">
+  <img src="images/bowl2.jpg">
+  <div class="item-wrapper">
+    <ul>
+      <li>
+        <span></span>
+        <h1><span>Veget-a-Bowl</span></h1><span class="in-cart"><i class="fa fa-check-square"></i> <span class="in-text">Added to Cart!</span></span> <span class="amount">$ 7.99</span>
+      </li>
+    </ul>
+  </div>
+  <p class="description"><i class="fa fa-leaf"></i> Vegan <i class="fa fa-fire"></i> Spicy</p>
+  <p>An alluring combination of words and phrases that describe the texture and origin of the ingredients that go into this bowl. Short and punchy statement to catch your attention and be lighthearted!</p>
+  <div class="slideblock show1">
+    <p class="quantity show1">Servings: <span id="count1"></span></p><input class="sliders" id="serv1" max="10" min="1" type="range" value="1">
+  </div><a class="add-to" id="add1" onclick="tog1()"><i class="fa fa-heart"></i> Add to cart</a>
+</div>
+  
+<!------------------------------------------------------>
+  
+<div class="item-container show2">
+  <img src="images/bowl1.jpg">
+  <div class="item-wrapper">
+    <ul>
+      <li>
+        <span></span>
+        <h1><span>Flamma-a-Bowl</span></h1><span class="in-cart"><i class="fa fa-check-square"></i> <span class="in-text">Added to Cart!</span></span> <span class="amount">$ 7.99</span>
+      </li>
+    </ul>
+  </div>
+  <p class="description"> <i class="fa fa-fire"></i> Spicy</p>
+  <p>An alluring combination of words and phrases that describe the texture and origin of the ingredients that go into this bowl. Short and punchy statement to catch your attention and be lighthearted!</p>
+  <div class="slideblock show2">
+    <p class="quantity show2">Servings: <span id="count2"></span></p><input class="sliders" id="serv2" max="10" min="1" type="range" value="1">
+  </div><a class="add-to" id="add2" onclick="tog2()"><i class="fa fa-heart"></i> Add to cart</a>
+</div>
+  
+<!------------------------------------------------------>
+<div class="item-container show3">
+  <img src="images/bowl1.jpg">
+  <div class="item-wrapper">
+    <ul>
+      <li>
+        <span></span>
+        <h1><span>Flamma-a-Bowl</span></h1><span class="in-cart"><i class="fa fa-check-square"></i> <span class="in-text">Added to Cart!</span></span> <span class="amount">$ 7.99</span>
+      </li>
+    </ul>
+  </div>
+  <p class="description"> <i class="fa fa-fire"></i> Spicy</p>
+  <p>An alluring combination of words and phrases that describe the texture and origin of the ingredients that go into this bowl. Short and punchy statement to catch your attention and be lighthearted!</p>
+  <div class="slideblock show3">
+    <p class="quantity show3">Servings: <span id="count3"></span></p><input class="sliders" id="serv3" max="10" min="1" type="range" value="1">
+  </div><a class="add-to" id="add3" onclick="tog3()"><i class="fa fa-heart"></i> Add to cart</a>
+</div>
+  
+<!------------------------------------------------------>
+<div class="item-container show4">
+  <img src="images/bowl1.jpg">
+  <div class="item-wrapper">
+    <ul>
+      <li>
+        <span></span>
+        <h1><span>Flamma-a-Bowl</span></h1><span class="in-cart"><i class="fa fa-check-square"></i> <span class="in-text">Added to Cart!</span></span> <span class="amount">$ 7.99</span>
+      </li>
+    </ul>
+  </div>
+  <p class="description"> <i class="fa fa-fire"></i> Spicy</p>
+  <p>An alluring combination of words and phrases that describe the texture and origin of the ingredients that go into this bowl. Short and punchy statement to catch your attention and be lighthearted!</p>
+  <div class="slideblock show4">
+    <p class="quantity show4">Servings: <span id="count4"></span></p><input class="sliders" id="serv4" max="10" min="1" type="range" value="1">
+  </div><a class="add-to" id="add4" onclick="tog4()"><i class="fa fa-heart"></i> Add to cart</a>
+</div>
+  
+<!------------------------------------------------------>
+<div class="item-container show5">
+  <img src="images/bowl1.jpg">
+  <div class="item-wrapper">
+    <ul>
+      <li>
+        <span></span>
+        <h1><span>Flamma-a-Bowl</span></h1><span class="in-cart"><i class="fa fa-check-square"></i> <span class="in-text">Added to Cart!</span></span> <span class="amount">$ 7.99</span>
+      </li>
+    </ul>
+  </div>
+  <p class="description"> <i class="fa fa-fire"></i> Spicy</p>
+  <p>An alluring combination of words and phrases that describe the texture and origin of the ingredients that go into this bowl. Short and punchy statement to catch your attention and be lighthearted!</p>
+  <div class="slideblock show5">
+    <p class="quantity show5">Servings: <span id="count5"></span></p><input class="sliders" id="serv5" max="10" min="1" type="range" value="1">
+  </div><a class="add-to" id="add5" onclick="tog5()"><i class="fa fa-heart"></i> Add to cart</a>
+</div>
+  
+<!------------------------------------------------------>
+<div class="item-container show6">
+  <img src="images/bowl1.jpg">
+  <div class="item-wrapper">
+    <ul>
+      <li>
+        <span></span>
+        <h1><span>Flamma-a-Bowl</span></h1><span class="in-cart"><i class="fa fa-check-square"></i> <span class="in-text">Added to Cart!</span></span> <span class="amount">$ 7.99</span>
+      </li>
+    </ul>
+  </div>
+  <p class="description"> <i class="fa fa-fire"></i> Spicy</p>
+  <p>An alluring combination of words and phrases that describe the texture and origin of the ingredients that go into this bowl. Short and punchy statement to catch your attention and be lighthearted!</p>
+  <div class="slideblock show6">
+    <p class="quantity show6">Servings: <span id="count6"></span></p><input class="sliders" id="serv6" max="10" min="1" type="range" value="1">
+  </div><a class="add-to" id="add6" onclick="tog6()"><i class="fa fa-heart"></i> Add to cart</a>
+</div>
+<!------------------------------------------------------>
+  </div> <!--closes not-cart-->
+  </div> <!--closes bigbox-->
+		<div id="footer-holder"></div><!--"load" function will load reuse-footer.html code into this div-->
+  
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'>
+	</script> <!--important! jQuery script CDN-->
+  	<script>
+	          $(function(){
+	              $('#header-holder').load('reuse/reuse-header.html');
+	            $('#footer-holder').load('reuse/reuse-footer.html');
+	          });
+	</script>
+  <script>
+  setTimeout(function(){
+    document.getElementById("no").className="not-cart";
+},1000);
+  </script>
+<script src="js/shop.js"></script>
+
+</body>
+</html>

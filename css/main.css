@@ -7,7 +7,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	vertical-align: baseline
 }
 body {
-	background-color: #c5ea9c;
+	background-color: #e0e0cc;
 }
 * {
 	box-sizing: border-box;
@@ -39,22 +39,35 @@ body {
 	width: 100%;
 	height: 550px;
   position: relative;
-  z-index: 4;
+  z-index: 5;
+}
+.banner:after {
+  content:"";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: black;
+  top: 0;
+  z-index:3;
 }
 .banner .banner-darken {
 	width: inherit;
 	height: inherit;
 	position: absolute;
+  z-index: 4;
 	top: 0px;
 	background-color: #2c0438;
 	opacity: .55;
 }
 .banner img {
+  z-index: 4;
+  position: relative;
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 }
 .banner-caption {
+  z-index: 4;
 	position: relative;
 	bottom: 50%;
   margin: 0 auto;
@@ -85,7 +98,7 @@ body {
 		bottom: 55%;
 	}
 	.banner-caption p {
-		font-size: 30px;
+		font-size: 24px;
 	}
 }
 @media screen and (max-width: 600px) {
@@ -100,8 +113,11 @@ body {
 		font-size: 45px;
 	}
 	.banner-caption p {
-		font-size: 24px;
+		font-size: 20px;
 	}
+  .supercard {
+    margin-top: -50px;
+  }
 }
 @media screen and (max-width: 350px) {
 	.banner-caption h1 {
@@ -109,8 +125,12 @@ body {
 		line-height: 44px;
 	}
 	.banner-caption p {
-		font-size: 24px;
+		font-size: 20px;
 	}
+  .scroll-down p{
+    font-size: 18px;
+  }
+  
 }
 @media screen and (max-height: 450px) and (hover:none) {
 	.banner {
@@ -121,8 +141,34 @@ body {
 		line-height: 44px;
 	}
 	.banner-caption p {
-		font-size: 30px;
+		font-size: 20px;
 	}
+  .supercard {
+    margin-top: -200px;
+    
+  }
+  .scroll-down {
+    margin-top: -20px;
+  }
+}
+@media screen and (max-height: 400px) and (hover:none) {
+	.banner {
+		height: 320px;
+	}
+	.banner-caption h1 {
+		font-size: 45px;
+		line-height: 44px;
+	}
+	.banner-caption p {
+		font-size: 20px;
+	}
+  .supercard {
+    margin-top: -250px;
+    
+  }
+  .scroll-down {
+    margin-top: -20px;
+  }
 }
 .banner-caption a {
 	background-color: #83bc41;
@@ -252,11 +298,20 @@ body {
   text-decoration: underline;
   text-decoration-color: #a896a1;
 }
+.supercard /*covers the bouncy text*/ {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  height: 120px;
+  top: 580px;
+  background-color: #e0e0cc;
+}
 .card {
   width: 100%;
   height: 380px;
   margin: 40px 0;
   position: relative;
+  z-index: 10;
 }
 
 .card img {
@@ -265,13 +320,14 @@ body {
   object-fit: cover;
   position: absolute;
   z-index: -20;
+  opacity: 0.3;
 }
 .card:before{
   content: "";
   background-color:#151700;
   top: 0;
   left: 0;
-  opacity: .5;
+  opacity: .3;
   width: 100%;
   height: 100%;
   z-index: -15;
@@ -306,17 +362,17 @@ body {
   font-family: 'Ramaraja', sans-serif;
 }
 .line {
-  left: -80px;
+  left: -40px;
   top: 95px;
   height: 2px;
-  width: 20%;
+  width: 10%;
   background-color: white;
   position: absolute;
 }
 .yogurt-power {
   z-index: 1;
   font-size: 30px;
-  font-family: 'Norican', sans-serif;
+  font-family: 'Leckerli One', serif;
   top: 280px;
   position: absolute;
   width: 100%;
@@ -363,7 +419,7 @@ body {
     padding-top: 12px;
   }
   .card .title {
-    font-size:40px;
+    font-size:45px;
   }
   .cardmonte {
     width: 90%;
@@ -372,12 +428,12 @@ body {
 
 @media screen and (max-width: 540px) {
   .card .caption {
-    font-size: 18px;
+    font-size: 22px;
     line-height: 20px;
     padding-top: 12px;
   }
   .card .title {
-    font-size:40px;
+    font-size:45px;
   }
   .cardmonte {
     width: 90%;
@@ -388,12 +444,13 @@ body {
 }
 /*Norican|Lackerli+One|Niconne|Marck+Script*/
 .scroll-down {
+  z-index: 2;
   position: absolute;
   width: 100%;
   text-align: center;
-  font-size: 30px;
-  font-family: 'Norican', sans-serif;
-  color: rgba(0, 0, 0, 0.9);
+  font-size: 24px;
+  font-family: 'Leckerli One', serif;
+  color: #28620b;
   animation-name: updown;
   animation-duration: 2s;
   animation-iteration-count: infinite;
@@ -422,3 +479,174 @@ hr {
   top: 0px;
   left: 5%;
 }
+
+.trail-container {
+  position: absolute;
+  float: left;
+  width: 450px;
+  height: 1246px;
+  margin-top: 110px;
+  margin-left: 40px;
+}
+@media screen and (max-width: 490px) {
+  .trail-container {
+    margin-left: -130px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .trail-container {
+    margin-left: -180px;
+  }
+}
+.trail-container::before {
+  content:"";
+  position: absolute;
+  width: 100%;
+  height: 250px;
+  top: -200px;
+  left: 0;
+  background:  #e0e0cc;
+  z-index: 1;
+}
+.trail-container img {
+  margin-top: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+.trail-container .trail-dark {
+  position: fixed;
+  top: 0;
+  margin-left: 12px;
+  width: 430px;
+  height: 80%;
+  box-shadow: 0 7px 10px #35a000;
+  background-color: #35a000;
+}
+.trail-container .trail-slight {
+  position: fixed;
+  top: 0;
+  width: 450px;
+  height: 100%;
+  background-color:  #8d7b54;
+  opacity: .24;
+}
+.trail-post {
+  clear: both;
+}
+.trail-container p {
+  z-index: 1000;
+  position: relative;
+  font-size: 50px;
+  width: 0px;
+  z-index: 10;
+}
+.trail-container p::after{
+  content: "";
+  background-color:  #c6baa2;
+  opacity: .64;
+  width: 30px;
+  height: 20px;
+  position: absolute;
+  z-index: -1;
+  border-radius: 19px;
+  top: 39px;
+  left: 0px;
+}
+.fa-map-marker {
+  display: block;
+  position: absolute;
+  color: #ff0000;
+  
+}
+
+.map1 {
+  left: 194px;
+  top: 40px;
+  display: none;
+}
+.map2 {
+  top: 80px;
+  left: 284px;
+}
+.map3 {
+  top: 505px;
+  left: 91px;
+}
+.map4 {
+  top: 925px;
+  left: 264px;
+}
+.map5 {
+  top: 1150px;
+  left: 134px;
+  color: #2e5f16;
+}
+.map5::after{
+  display: none;
+}
+
+.mbanner {
+	width: 100%;
+	height: 250px;
+  position: relative;
+  z-index: 4;
+}
+.mbanner .mbanner-darken {
+	width: inherit;
+	height: inherit;
+	position: absolute;
+	top: 0px;
+	background-color: #2c0438;
+	opacity: .55;
+}
+.mbanner img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.mbanner-caption a {
+	position: absolute;
+	bottom: 10px;
+  margin: 0 20px;
+	color: white;
+	width: 75%;
+	min-width: 280px;
+	max-width: 800px;
+  text-decoration: none;
+}
+.mbanner-caption h1 {
+	font-size: 65px;
+	max-width: 1200px;
+	display: inline-block;
+	font-family: 'Ramaraja', serif;
+	line-height: 60px;
+}
+.truck-holder {
+  width: 100%; 
+  text-align: right;
+  font-size: 50px;
+  margin-top: -150px;
+  padding-top: 25px;
+  color: #244e0f;
+  padding-right: 25px;
+  animation-name: jump;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: jump;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+  -o-animation-name: jump;
+  -o-animation-duration: 1s;
+  -o-animation-iteration-count: infinite;
+  -moz-animation-name: jump;
+  -moz-animation-duration: 1s;
+  -moz-animation-iteration-count: infinite;
+}
+@keyframes jump {
+  0% {padding-top:25px; padding-bottom: 0px;}
+  50% {padding-top:20px; padding-bottom: 5px;}
+}
+
