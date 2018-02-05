@@ -1,23 +1,50 @@
 html, body {
   height: 100%;
 }
-
-
-
-h1 {
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  color: white;
-  font-size: 7vmin;
-  text-align: center;
-  text-transform: uppercase;
-  -webkit-transform: translate3d(-50%, -50%, 0);
-          transform: translate3d(-50%, -50%, 0);
+body {
+  background: black;
 }
 
+
+.title {
+  text-align: center;
+  width: 100%;
+  color: white;
+  font-family: 'Ramaraja', serif;
+  font-size: 40px;
+  margin-top: 80px;
+}
+.moving { 
+  position: absolute;
+}
+.dotter {
+  width: 30px;
+  text-align: left;
+  height: 50px;
+  font-size: 40px;
+  color: red;
+  cursor: pointer;
+}
+.dotter:hover i {
+  color: white;
+}
+.dotter:focus i {
+  color: white;
+}
+.dotter p {
+  width: 100px;
+  margin-left: 30px;
+  font-size: 15px;
+  font-family: 'Josefin Sans', sans-serif;
+  opacity: 0;
+  color: white;
+}
+.dotter:focus p {
+  opacity: 1;
+}
+.dotter:hover p {
+  opacity: 1;
+}
 .wrap {
   height: 100%;
   position: relative;
@@ -34,4 +61,62 @@ h1 {
   background-size: cover;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+  opacity: 0.8;
+}
+.riser {
+  position: absolute;
+  left:-4000px;
+  height: 100%;
+  top: 160px;
+  margin: 25px;
+  line-height: 32px;
+  font-size: 20px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: white;
+  padding: 25px;
+  background-color: rgba(27, 75, 49, 0.69);
+	transition: all .6s;
+	-webkit-transition: all .6s;
+	-moz-transition: all .6s;
+	-o-transition: all .6s;
+	-ms-transition: all .6s;
+}
+.riser h1 {
+  font-family: 'Leckerli One', serif;
+}
+.riser h1 a {
+  font-family: 'Josefin Sans', sans-serif;
+  float: right;
+  cursor: pointer;
+  font-size: 30px;
+}
+.riser h1, .riser p {
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 500px) {
+  .riser p {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .riser p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .riser {
+    margin: 15px;
+    padding: 5px;
+  }
+}
+.riser a:hover {
+  text-decoration: underline;
+}
+.riser a {
+  color: white;
+  text-decoration: none;
+}
+
+.rise {
+  left:0;
 }
