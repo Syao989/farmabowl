@@ -659,8 +659,12 @@ hr {
   font-size: 60px;
 }
 @media screen and (max-width: 400px) {
-  font-size: 50px;
+  .title.moving {
+     font-size: 50px;
+  }
 }
 @media screen and (max-width: 300px) {
-  font-size: 40px;
+  .title.moving {
+     font-size: 40px;
+  }
 }
