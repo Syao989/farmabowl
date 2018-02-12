@@ -19,11 +19,11 @@ body {
 
 .category-holder {
     top: 40px;
-    left: 10%;
+    left: 20%;
     position: relative;
     background-color: rgba(0, 139, 139, 0.35);
     color: white;
-    width: 80%;
+    width: 60%;
     height: auto;
     min-height: 300px;
     max-height: 500px;
@@ -36,10 +36,10 @@ body {
 
 .category-holder .category-element {
     display: flex;
-    width: 97%;
+    width: 95%;
     height: 100px;
     text-align: center;
-    margin: 10px;
+    margin: 20px;
     box-shadow: 5px 5px 4px grey;
     cursor: pointer;
 }
@@ -124,11 +124,11 @@ body {
 .text-holder {
     position: relative;
     top: 80px;
-    left: 10%;
+    left: 16%;
     font-family: Josefin Sans;
     font-size: 24px;
     color: black;
-    width: 80%;
+    width: 68%;
     height:auto;
     overflow:visible;
 }
