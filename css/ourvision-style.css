@@ -24,23 +24,21 @@ body {
     background-color: rgba(0, 139, 139, 0.35);
     color: white;
     width: 60%;
-    height: auto;
-    min-height: 300px;
-    max-height: 500px;
+    height: 550px;
     padding: 1px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
 .category-holder .category-element {
     display: flex;
-    width: 95%;
-    height: 100px;
+    width: 96%;
+    height: 110px;
     text-align: center;
     margin: 20px;
-    box-shadow: 5px 5px 4px grey;
+    box-shadow: 5px 5px 5px grey;
     cursor: pointer;
 }
 
@@ -124,11 +122,11 @@ body {
 .text-holder {
     position: relative;
     top: 80px;
-    left: 16%;
+    left: 18%;
     font-family: Josefin Sans;
     font-size: 24px;
     color: black;
-    width: 68%;
+    width: 64%;
     height:auto;
     overflow:visible;
 }
