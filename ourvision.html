@@ -6,74 +6,74 @@
 	<meta charset="UTF-8">
 	<title>Farm-a-Bowl: Our Vision</title>
 	<link href="https://fonts.googleapis.com/css?family=Norican|Leckerli+One|Niconne|Marck+Script|Josefin+Sans|Ramaraja" rel="stylesheet"><!--custom fonts-->
-	<link href="css/ourvision-style.css" rel="stylesheet"><!--main stylesheet-->
+	<link href="css/ourvision-style.css" rel="stylesheet"><!--page stylesheet-->
 	<link href="css/header-style.css" rel="stylesheet"><!--stylesheet for header-->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"><!--fontawesome icons-->  
-    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    	<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
     <div id="header-holder"></div><!--"load" function will load reuse-header.html code into this div-->
     
     <div class="banner-small">
-		<img src="images/bowl1.jpg">
+		<img src="images/bowl1.jpg"> <!--same banner image-->
 		<div class="banner-darken"></div>
 		<div class="banner-caption">
-			<h1>Our Vision...</h1>
+			<h1>Our Vision...</h1> <!-- Article Title -->
 		</div>
 	</div>
     
-    <div class="category-holder">
-        <div class="category-element" onclick="toggle1()" id="cat1">
-            <figure class = "tint t1">
-                <img src="images/Sustain-a-bowl.jpeg">
-                <button id="button1" onclick="toggle1()">Sustain-a-Bowl</button>
+    <div class="category-holder"> <!--holds categories of information-->
+        <div class="category-element" onclick="toggle1()" id="cat1"> <!--respective content title; click reveals respective content body-->
+            <figure class = "tint t1"> <!--green tint-->
+                <img src="images/Sustain-a-bowl.jpeg"> <!--plant image-->
+                <button id="button1" onclick="toggle1()">Sustain-a-Bowl</button> <!--actual button with text-->
             </figure>
         </div>
         <div class="category-element" onclick="toggle2()" id="cat2">
-            <figure class = "tint t2">
-                <img src="images/Access-i-bowl.jpg">
+            <figure class = "tint t2"> <!--blue tint-->
+                <img src="images/Access-i-bowl.jpg"> <!--city skyline image-->
                 <button id="button2" onclick="toggle2()">Access-a-Bowl</button>
             </figure>
         </div>
         <div class="category-element" onclick="toggle3()" id="cat3">
-            <figure class = "tint t3">
-                <img src="images/Depend-a-bowl.jpg">
+            <figure class = "tint t3"> <!--yellow tint-->
+                <img src="images/Depend-a-bowl.jpg"> <!--handing tomatoes image-->
                 <button id="button3" onclick="toggle3()">Depend-a-Bowl</button>
             </figure>
         </div>
         <div class="category-element" onclick="toggle4()" id="cat4">
-            <figure class = "tint t4">
-                <img src="images/Enjoy-a-bowl.jpg">
+            <figure class = "tint t4"> <!--red tint-->
+                <img src="images/Enjoy-a-bowl.jpg"> <!--kid eating image-->
                 <button id="button4" onclick="toggle4()">Enjoy-a-Bowl</button>
             </figure>
         </div>
     </div>
     
-    <nav class="text-holder">
-        <nav class="text-element" id="text1">
+    <nav class="text-holder"> <!--holds main body of text, interchangeable-->
+        <nav class="text-element" id="text1"> <!--corresponding to sustain-a-bowl-->
             <h1>Sustainability</h1>
             <br>
             <p>Here at Farm-a-Bowl, we use top-notch, high-quality ingredients for every one of our bowls to support our local scene and provide a healthy experience for both our customers and our community. We’ve reached out to local farmers in Oregon to get the freshest, most natural ingredients. We believe in using USDA certified organic foods to ensure that all of our ingredients contain no artificial ingredients and meet proper environmental standards. With proper farming techniques and healthy ingredients, we ensure that our ingredients will remain sustainable while we provide nourishing food to help sustain our customers. </p>
 	</nav>
-        <nav class="text-element" id="text2">
+        <nav class="text-element" id="text2"> <!--access-a-bowl-->
             <h1>Accessibility</h1>
             <br>
             <p>With over 30 locations over the state of Oregon, we have drivers ready to deliver to any city around Central Oregon and Willamette Valley. Our bowls are designed to withstand any season and any weather. Rather than pouring our resources into hot food that may lose its quality through delivery, we chose to optimize our costs by focusing on our ingredients and crafting simply, masterful bowls that stay chilled from our kitchen to your house. We strive to provide busy customers with a convenient, first-rate culinary experience for half the price and none of the hassle.</p>
         </nav>
-        <nav class="text-element" id="text3">
+        <nav class="text-element" id="text3"> <!--depend-a-bowl-->
             <h1>Dependability</h1>
             <br>
             <p>Our timely delivery system guarantees that you will receive your bowl within 30 minutes to ensure that our bowls retain their quality and freshness. With ingredients straight from local farms, no nutritional value is lost through either premature harvesting or flash freezing. Our bowls maintain their quality and flavor due to our efficient distribution method combined with our chilled production process. This way, with any bowl you order, you can always look forward to the great taste of our bowls.</p>
         </nav>
-        <nav class="text-element" id="text4">
+        <nav class="text-element" id="text4"> <!--enjoy-a-bowl-->
             <h1>Enjoyability</h1>
             <br>
             <p>Whether you’re ordering for yourself, your co-workers, your vegan friend, or the whole family, here at Farm-a-Bowl, we’ve created countless options to suit everyone’s tastes. Rather than being limited to one cuisine type, our chefs have innovated new and creative recipes that derive culinary inspirations from cultures all around the world. Whether it be our Sockeye Salmon Poke Bowl, a Hawaiian, Asian-inspired local classic, our Smoked Sausage Charcuterie Bowl with French roots, or our vegan SuperFood Quinoa Bowl, we have delicious and healthy options for everyone.</p>
         </nav>
     </nav>
     
-    <div class="vertical-space"></div>
+    <div class="vertical-space"></div> <!--spacing-->
     
     <div id="footer-holder"></div><!--"load" function will load reuse-footer.html code into this div-->
 
@@ -84,14 +84,14 @@
     <script>
         AOS.init();
     </script>
-    <script>
+    <script> //loads header and footer
        $(function(){
            $('#header-holder').load('reuse/reuse-header.html');
            $('#footer-holder').load('reuse/reuse-footer.html');
        });
     </script>
 
-    <script>
+    <script> //respective buttons for the whole box
         function toggle1() {
             document.getElementById("text1").style.opacity = "1";  
             document.getElementById("text2").style.opacity = "0";
