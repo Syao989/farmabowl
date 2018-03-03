@@ -17,11 +17,11 @@ body { /*background image of man looking at mountains*/
 	box-sizing: border-box;
 } 
 
-.category-holder { /*background of title categories, blue slight transparent*/
+.category-holder { /*background of title categories, transparent, vertically aligned flex boxes*/
     top: 40px;
     left: 20%;
     position: relative;
-    background-color: rgba(0, 139, 139, 0.35);
+    background-color: transparent;
     color: white;
     width: 60%;
     height: 550px;
