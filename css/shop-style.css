@@ -1,3 +1,73 @@
+.symbol-container {
+    height: 90px;
+    max-width: 1600px;
+    margin: 15px;
+    padding: 10px;
+    position: relative;
+    display: block;
+    background-color: darkseagreen;
+    box-shadow: 0 5px 10px rgba(73, 44, 101, 0.29);
+    color: darkolivegreen;
+    font-family: Josefin Sans;
+}
+
+.symbol-header {
+    display: block
+    max-width: 1600px;
+    font-size: 26px;
+    font-family: norican;
+    font-style: italic;
+    text-decoration: underline;
+    padding: 2px;
+    color: black;
+}
+
+.symbol-content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    font-family: Josefin Sans;
+}
+
+.type-info {
+    max-width: 196px;
+    padding: 2px;
+    font-size: 14pt;
+    text-align: center;
+    flex-direction: column;
+}
+
+.type-description {
+    line-height: 1.2;
+    padding: 3px 2px;
+    background-color: aliceblue;
+    text-align: center;
+    z-index: 10;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    opacity: 0;
+    top: -25px;
+    transition: all 2s;
+	-webkit-transition: all .5s ease-in-out;s
+	-moz-transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+	-ms-transition: all .5s ease-in-out;
+    box-shadow: 0 10px 15px rgba(73, 44, 101, 0.29);
+    background-color: #a5efc1;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.type-description h2 {
+    font-size: 12pt;
+    color: #38471f;
+    padding: 2px;
+}
+
+.type-info:hover .type-description{
+    opacity: 0.90;
+}
+
 .item-container {
   margin: 15px;
   height: 300px;
