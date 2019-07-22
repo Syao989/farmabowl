@@ -35,6 +35,7 @@
     font-size: 14pt;
     text-align: center;
     flex-direction: column;
+    pointer-events: none;
 }
 
 .type-description {
@@ -56,12 +57,17 @@
     box-shadow: 0 10px 15px rgba(73, 44, 101, 0.29);
     background-color: #a5efc1;
     border-radius: 5px 5px 5px 5px;
+    pointer-events: none;
 }
 
 .type-description h2 {
     font-size: 12pt;
     color: #38471f;
     padding: 2px;
+}
+
+.type-description h1 {
+    pointer-events: auto;
 }
 
 .type-info:hover .type-description{
