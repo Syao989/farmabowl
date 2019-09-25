@@ -1,8 +1,5 @@
 # Farm-a-Bowl
 George Hu, Seong Ryoo, Steven Yao
 
-An E-Business Website Delivering Fresh Bowls Locally.
+2018 E-business FBLA National Conference Submission
 
-https://lostherro.github.io/farmabowl/index.html
-
-Entered under the e-business category for FBLA 2018.
